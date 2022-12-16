@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+/* brand color palette */
+:root {
+  --primary: rgb(88, 113, 151);
+  --secondary: rgb(195, 199, 199);
+  --tertiary: rgb(83, 88, 100);
+  --dark: rgb(2, 9, 37);
+  --light: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--tertiary);
+  box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
+}
+
+header h1 {
+  color: var(--tertiary);
+  background-color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.intro {
+  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(90deg, var(--secondary) 0%, var(--primary) 90%);
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  padding: 2% 6%;
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.intro div {
+  flex: 0 0 90%;
+}
+
+.intro h2 {
+  color: purple;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 3.2rem;
+  line-height: 1.0;
+  display: inline;
+}
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.section > div {
+  flex: 0 0 77%;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: 5px solid var(--secondary);
+  color: black;
+  min-height: 120px;
+  max-height: 120px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.item:first-child {
+    min-height: 500px;
+    flex-basis: 200%;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.item h3 {
+  font-size: 1.6rem;
+}
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--tertiary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
+.target {
+  background-image: url("../images/Color-Target-logo.png");
+}
+
+.tcf {
+  background-image: url("../images/TCF_Financial_Corp_logo.svg.png");
+}
+
+.babysitter {
+  background-image: url("../images/13.jpg");
+}
+
+
